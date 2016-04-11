@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZZFTabBarController.h
 //  电话本
 //
 //  Created by 左忠飞 on 16/4/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZZFTabBarController : UITabBarController
 
 @end
-

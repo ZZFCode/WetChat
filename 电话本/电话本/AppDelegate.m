@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZZFTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //1 创建窗口
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    //2 设置跟控制器
+    self.window.rootViewController = [[ZZFTabBarController alloc]init];
+    //3 显示窗口
+    [self.window makeKeyAndVisible];
+    
+    
+    //访问通讯录授权
+        
     return YES;
 }
 
